@@ -1,0 +1,67 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# 1C licenses, installation media, binary exports and local databases
+*.lic
+*.pfl
+*.1CD
+*.1cd
+*.dt
+*.cf
+*.cfu
+*.cfe
+*.epf
+*.erf
+*.deb
+*.rpm
+*.msi
+*.exe
+
+# PostgreSQL data, backups and generated state
+**/pgdata/
+**/postgres-data/
+backups/
+*.dump
+*.backup
+*.sql.gz
+
+# Docker and Jenkins local state; keep Dockerfiles and Compose sources tracked
+**/volumes/
+**/jenkins_home/
+**/jenkins-data/
+compose.override.yml
+compose.override.yaml
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Build, CI and test output; keep .github/workflows tracked
+artifacts/
+build/
+dist/
+coverage/
+test-results/
+reports/
+*.log
+*.tmp
+*.temp
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
